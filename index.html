@@ -161,7 +161,11 @@
       vertical-align: middle;
     }
 
-    /* @media only screen and (max-device-width: 480px) {
+    #mobile-only {
+      display: none !important;
+    }
+
+    @media (max-width: 600px) {
 
       table[class=hide],
       img[class=hide],
@@ -169,8 +173,8 @@
         display: none !important;
       }
 
-      .contents1 {
-        width: 100%;
+      .column {
+        max-width: 500px;
       }
 
       .contents1 {
@@ -191,7 +195,20 @@
 
       .contents1 {
         width: 100%;
-      } */
+      }
+
+      .contents1 {
+        width: 100%;
+      }
+
+      #desktop-only {
+        display: none !important;
+      }
+
+      #mobile-only {
+        display: inline-block !important;
+      }
+    }
   </style>
   <!--[if (gte mso 9)|(IE)]>
 	<style type="text/css">
@@ -269,11 +286,9 @@
                   <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF"
                     style=" border-left:1px solid #e8e7e5; border-right:1px solid #e8e7e5">
                     <tr>
-                      <td
-                        background="https://cms-prod.acm.org/?1-IResourceListener-root-tabs-panel~container-cards-2-panel-center-tabs-panel~container-cards-82-panel-editor-extension.editor-template-view-4-item-view-1-item-extension.display-fragment-image&w:lm=1449687902&h:pathmd=441f00c47001770960dd907d3ea4a541"
-                        bgcolor="#1f3ca6" width="600" height="150" valign="top" align="center"
-                        style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;font-size:0"
-                        >
+                      <td background="https://i.imgur.com/aKdG5po.jpg" bgcolor="#1f3ca6" width="600" height="150"
+                        valign="top" align="center"
+                        style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;font-size:0">
                         <!--[if gte mso 9]>
   <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:260px;">
     <v:fill type="tile" src="https://sites.google.com/site/formareprofesionalaonline/_/rsrc/1502430597581/na/23-us/32-ny/acm/acm_logo.png" color="#1f3ca6" />
@@ -334,7 +349,7 @@
                       </tr>
                     </table>
 
-                    <!-- ======= start two column ======= -->
+                    <!-- ======= feature one ======= -->
 
                     <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF">
                       <tr>
@@ -398,9 +413,9 @@
 
                     <!-- ======= end two column ======= -->
 
-                    <!-- ======= start two column ======= -->
+                    <!-- ======= feature-two-desktop ======= -->
 
-                    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF">
+                    <table id="desktop-only" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF">
                       <tr>
                         <td class="two-column"
                           style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;font-size:0;">
@@ -423,10 +438,6 @@
                                           style="font-size:14px; text-decoration:none; color:#262626; font-family: Verdana, Geneva, sans-serif; text-align:left">
                                           <strong>Subscription to Communications of the ACM</strong>, our award-winning
                                           flagship magazine covering news, practice, research highlights, and more.</p>
-                                        <p
-                                          style="font-size:14px; text-decoration:none; color:#3a3d41; font-family: Verdana, Geneva, sans-serif; text-align:left; line-height:18px">
-                                          <a href="#" target="_blank" style="color:#1f3ca6; text-decoration:none"></a>
-                                        </p>
                                       </td>
                                     </tr>
                                   </table>
@@ -459,6 +470,76 @@
 													<![endif]-->
                         </td>
                       </tr>
+                    </table>
+
+                    <!-- ======= end feature two desktop only ======= -->
+
+                    <!-- ======= start feature two mobile only ======= -->
+
+                    <table id="mobile-only" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+                      <tbody>
+                        <tr>
+                          <td class="two-column"
+                            style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;font-size:0;">
+                            <!--[if (gte mso 9)|(IE)]>
+                          <table width="100%" style="border-spacing:0" >
+                          <tr>
+                          <td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                          <![endif]-->
+
+                            <div class="column"
+                              style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
+                              <table class="contents" style="border-spacing:0; width:100%" bgcolor="#FFFFFF">
+                                <tbody>
+                                  <tr>
+                                    <td align="left"><img
+                                        src="https://gallery.mailchimp.com/fdcaf86ecc5056741eb5cbc18/images/c11788a0-0366-43bd-812f-4756c82a6f93.jpg"
+                                        alt="" style="border-width:0;width:100%; height:auto;display:block" width="300">
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+
+                            <!--[if (gte mso 9)|(IE)]>
+                          </td><td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                          <![endif]-->
+
+                            <div class="column"
+                              style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
+                              <table width="100%" style="border-spacing:0">
+                                <tr>
+                                  <td class="inner"
+                                    style="padding-top:0px;padding-bottom:10px; padding-right:20px;padding-left:30px;">
+                                    <table class="contents" style="border-spacing:0; width:100%">
+                                      <tr>
+                                        <td align="center" valign="middle" style="padding-top:50px; padding-right:5px">
+                                          <p
+                                            style="font-size:14px; text-decoration:none; color:#262626; font-family: Verdana, Geneva, sans-serif; text-align:left">
+                                            <strong>Subscription to Communications of the ACM</strong>, our
+                                            award-winning
+                                            flagship magazine covering news, practice, research highlights, and more.
+                                          </p>
+                                          <p
+                                            style="font-size:14px; text-decoration:none; color:#3a3d41; font-family: Verdana, Geneva, sans-serif; text-align:left; line-height:18px">
+                                            <a href="#" target="_blank" style="color:#1f3ca6; text-decoration:none"></a>
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+
+                            <!--[if (gte mso 9)|(IE)]>
+                          </td>
+                          </tr>
+                          </table>
+                          <![endif]-->
+                          </td>
+                        </tr>
+                      </tbody>
                     </table>
 
                     <!-- ======= end two column ======= -->
@@ -497,26 +578,28 @@
                             <div class="column"
                               style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
                               <table width="100%" style="border-spacing:0">
-                              <tr>
-                                <td class="inner"
-                                  style="padding-top:0px;padding-bottom:10px; padding-right:20px;padding-left:30px;">
-                                  <table class="contents" style="border-spacing:0; width:100%">
-                                    <tr>
-                                      <td align="center" valign="middle" style="padding-top:50px; padding-right:5px">
-                                        <p
-                                          style="font-size:14px; text-decoration:none; color:#262626; font-family: Verdana, Geneva, sans-serif; text-align:left">
-                                          <strong>Subscription to Communications of the ACM</strong>, our award-winning
-                                          flagship magazine covering news, practice, research highlights, and more.</p>
-                                        <p
-                                          style="font-size:14px; text-decoration:none; color:#3a3d41; font-family: Verdana, Geneva, sans-serif; text-align:left; line-height:18px">
-                                          <a href="#" target="_blank" style="color:#1f3ca6; text-decoration:none"></a>
-                                        </p>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
+                                <tr>
+                                  <td class="inner"
+                                    style="padding-top:0px;padding-bottom:10px; padding-right:20px;padding-left:30px;">
+                                    <table class="contents" style="border-spacing:0; width:100%">
+                                      <tr>
+                                        <td align="center" valign="middle" style="padding-top:50px; padding-right:5px">
+                                          <p
+                                            style="font-size:14px; text-decoration:none; color:#262626; font-family: Verdana, Geneva, sans-serif; text-align:left">
+                                            <strong>Subscription to Communications of the ACM</strong>, our
+                                            award-winning
+                                            flagship magazine covering news, practice, research highlights, and more.
+                                          </p>
+                                          <p
+                                            style="font-size:14px; text-decoration:none; color:#3a3d41; font-family: Verdana, Geneva, sans-serif; text-align:left; line-height:18px">
+                                            <a href="#" target="_blank" style="color:#1f3ca6; text-decoration:none"></a>
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
                             </div>
 
                             <!--[if (gte mso 9)|(IE)]>
